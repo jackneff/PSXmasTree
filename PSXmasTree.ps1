@@ -13,19 +13,16 @@ function PSXmasTree {
         [int]$Idx = (Get-Random -Min 0 -Max ($Colors.Length-1))
     )
    
-    for ( $i=1; $i -le $Size[0]; $i++) {
+    for ( $i=1; $i -le $Size[0]; $i++ ) {
         $Line = " " * ($XPos - $i) + "*" * ($i * 2)
         $Idx = $Idx % $Colors.Length
         Write-Host $Line -ForegroundColor $Colors[$Idx]
         $Idx++
     }  
 
-    $j = $Size[2]
-
-    while ( $j -gt 0 ) {
+    for ( $j=1; $j -le $Size[2]; $j++ ){
         $Line = " " * ( $XPos - ( $Size[1] / 2 ) ) + "#" * $Size[1]
         Write-Host $Line -ForegroundColor DarkRed
-        $j--
     }
 
 }
