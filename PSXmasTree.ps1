@@ -1,5 +1,5 @@
 # Prints a christmas tree to terminal
-# Variable $Size = (tree_height,trunk_width_trunk_height)
+# Variable $Size = (tree_height, trunk_width, trunk_height)
 # Variable $XPos = The starting x position on the terminal line
 # Variables $Colors = List of colors to use
 # Random color pattern each execution
